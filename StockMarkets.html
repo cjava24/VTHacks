@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Stock Markets </title>
+    <link rel = "stylesheet" type = "text/css" href = "vthacks.css">
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width-device-width">
+    <script src='vthackssubmit.js'></script>
+  </head>
+  <body>
+
+    <form id = "infoSubmission">
+      Employment Status: <br>
+      <select name = "employmentStatus" form = "infoSubmission">
+        <option value = 0> Retired </option>
+        <option value = 1> Unemployed </option>
+        <option value = 2> Employed </option>
+      </select> <br><br>
+
+      Family Status: <br>
+      <select name = "familyStatus" form = "infoSubmission">
+        <option value = 0> Married with Dependents </option>
+        <option value = 1> Has Dependents </option>
+        <option value = 2> Married </option>
+        <option value = 3> Single </option>
+        <option value = 4> Dependent </option>
+      </select> <br><br>
+
+      Investment Intensity: <br>
+      <select name = "investIntensity" form = "infoSubmission">
+        <option value = 0> Low </option>
+        <option value = 1> Medium </option>
+        <option value = 2> High </option>
+      </select> <br>
+
+      <p>
+        Disposable Income: <br>
+        <input type = "number" name = "disposableIncome" min = "100" max = "10000" step = "100" value = "1000"><br>
+      <!--  <script>
+          <input type = "number" name = "disposableIncome" min = "1" max = "10000" onkeyup="if(this.value>10000 || this.value <1) this.value = null;">
+        </script>-->
+      </p>
+
+      <p>
+        Term Length: <br>
+        <input type = "number" name = "termLength" min = "6" max = "60" step = "1" value = "12"><br>
+      </p>
+        <input type="button" onclick="myFunction()" value = "Submit">
+    </form>
+
+    <button onclick="myFunction()">Test</button>
+    <p id = "demo"> </p>
+  <!-- <script >
+  /*  function myFunction() {
+      var x = document.getElementById("infoSubmission");
+      var a ="";
+        for(i=0;i<x.length;i++)
+        {
+            a+=x.elements[i].value + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = a;
+      }
+    /*    var es= x.elements[0].value;  //employmentStatus
+        var fs= x.elements[1].value;   // familyStatus
+        var ii=x.elements[2].value;//
+        var di=x.elements[3].value;
+        var tl=x.elements[4].value;
+
+        document.getElementById("demo").innerHTML = es;
+        document.getElementById("demo").innerHTML = fs;
+        document.getElementById("demo").innerHTML = ii;
+        document.getElementById("demo").innerHTML = tl;
+
+      }*/
+
+    </script>-->
+  </body>
+
+</html>
